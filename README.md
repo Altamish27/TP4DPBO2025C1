@@ -1,51 +1,50 @@
+##Saya Hasbi Haqqul Fikri dengan NIM 2309245 mengerjakan soal TP 3 dalam mata kuliah DPBO untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 
-Desain Program
-Program ini adalah aplikasi GUI berbasis Java Swing untuk mengelola data mahasiswa. Aplikasi ini memungkinkan pengguna untuk menambah, mengedit, dan menghapus data mahasiswa, termasuk atribut NIM, Nama, Jenis Kelamin, dan Wali Dosen (Waldos).
+# Aplikasi Manajemen Data Mahasiswa
 
-Program menggunakan JTable untuk menampilkan daftar mahasiswa, serta beberapa komponen UI seperti JTextField, JComboBox, dan JButton untuk interaksi pengguna.
+## Deskripsi
+Aplikasi ini adalah sebuah program berbasis Java Swing yang digunakan untuk mengelola data mahasiswa. Pengguna dapat menambahkan, mengedit, dan menghapus data mahasiswa yang mencakup NIM, Nama, Jenis Kelamin, dan Wali Dosen (Waldos). Program ini menampilkan daftar mahasiswa dalam JTable serta menyediakan berbagai komponen UI seperti JTextField, JComboBox, dan JButton untuk interaksi pengguna.
 
-Alur Program
-Inisialisasi Data
+## Fitur Utama
+- **Menampilkan daftar mahasiswa** dalam bentuk tabel.
+- **Menambahkan data mahasiswa** dengan input NIM, Nama, Jenis Kelamin, dan Wali Dosen.
+- **Mengedit data mahasiswa** yang sudah ada dengan mudah.
+- **Menghapus data mahasiswa** dengan konfirmasi sebelum penghapusan.
+- **Menggunakan JComboBox** untuk memilih Jenis Kelamin dan Wali Dosen agar input lebih konsisten.
 
-Data awal mahasiswa diinisialisasi dalam bentuk ArrayList<Mahasiswa>.
+## Desain Program
+Program ini menggunakan **Java Swing** dan **DefaultTableModel** untuk memanipulasi data dalam JTable. Data mahasiswa disimpan dalam **ArrayList** yang kemudian digunakan untuk mengisi tabel.
 
-Data ditampilkan dalam tabel (JTable) menggunakan DefaultTableModel.
+## Alur Program
+### 1. Inisialisasi Data
+- Data awal mahasiswa diinisialisasi dalam bentuk `ArrayList<Mahasiswa>`.
+- Data ditampilkan dalam tabel (`JTable`) menggunakan `DefaultTableModel`.
 
-Pengguna Menambah Data
+### 2. Pengguna Menambah Data
+- Pengguna mengisi **NIM**, **Nama**, memilih **Jenis Kelamin**, dan **Wali Dosen** dari `JComboBox`.
+- Ketika tombol **Add** ditekan, data baru ditambahkan ke dalam `ArrayList` dan tabel diperbarui.
 
-Pengguna mengisi NIM, Nama, memilih Jenis Kelamin, dan Wali Dosen dari JComboBox.
+### 3. Pengguna Mengedit Data
+- Pengguna mengklik salah satu baris di tabel, lalu data tersebut ditampilkan kembali di input form.
+- Jika tombol **Update** ditekan, data dalam `ArrayList` diperbarui dan tabel diperbarui.
 
-Ketika tombol Add ditekan, data baru ditambahkan ke dalam ArrayList dan tabel diperbarui.
+### 4. Pengguna Menghapus Data
+- Setelah memilih data dalam tabel, pengguna dapat menekan tombol **Delete** untuk menghapus data.
+- Program akan meminta konfirmasi sebelum menghapus.
 
-Pengguna Mengedit Data
+## Penambahan Atribut Waldos
+### 1. Menambahkan Atribut pada Mahasiswa
+- Atribut **Waldos** ditambahkan ke dalam objek `Mahasiswa`, yang berisi nama Wali Dosen.
 
-Pengguna mengklik salah satu baris di tabel, lalu data tersebut ditampilkan kembali di input form.
+### 2. Menampilkan Waldos dalam Form Input
+- `JComboBox` digunakan untuk menampilkan daftar Wali Dosen agar pengguna bisa memilih salah satu.
+- Data Wali Dosen diinisialisasi dalam bentuk array yang kemudian dimasukkan ke dalam `JComboBox`.
 
-Jika tombol Update ditekan, data dalam ArrayList diperbarui dan tabel diperbarui.
+### 3. Menyimpan dan Menampilkan Waldos di Tabel
+- Saat pengguna menambah atau mengedit data, pilihan **Waldos** dari `JComboBox` akan disimpan dalam `ArrayList<Mahasiswa>`.
+- Nilai **Waldos** akan ditampilkan dalam tabel sebagai salah satu kolom.
 
-Pengguna Menghapus Data
+---
+**Author:** Hasbi Haqqul Fikri
 
-Setelah memilih data dalam tabel, pengguna dapat menekan tombol Delete untuk menghapus data.
-
-Program akan meminta konfirmasi sebelum menghapus.
-
-Penambahan Atribut Waldos
-Menambahkan Atribut pada Mahasiswa
-
-Atribut Waldos ditambahkan ke dalam objek Mahasiswa, yang berisi nama Wali Dosen.
-
-Menampilkan Waldos dalam Form Input
-
-JComboBox digunakan untuk menampilkan daftar Wali Dosen agar pengguna bisa memilih salah satu.
-
-Data Wali Dosen diinisialisasi dalam bentuk array yang kemudian dimasukkan ke dalam JComboBox.
-
-Menyimpan dan Menampilkan Waldos di Tabel
-
-Saat pengguna menambah atau mengedit data, pilihan Waldos dari JComboBox akan disimpan dalam ArrayList<Mahasiswa>.
-
-Nilai Waldos akan ditampilkan dalam tabel sebagai salah satu kolom.
-
-Kesimpulan
-Penambahan atribut Waldos memungkinkan pengguna untuk memilih Wali Dosen dari daftar yang tersedia menggunakan JComboBox. Ini mempermudah pengguna dalam memasukkan data tanpa perlu mengetik manual, serta menjaga konsistensi data.
