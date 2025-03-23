@@ -45,3 +45,6 @@ Program ini menggunakan **Java Swing** dan **DefaultTableModel** untuk memanipul
 - Saat pengguna menambah atau mengedit data, pilihan **Waldos** dari `JComboBox` akan disimpan dalam `ArrayList<Mahasiswa>`.
 - Nilai **Waldos** akan ditampilkan dalam tabel sebagai salah satu kolom.
 
+![image](https://github.com/user-attachments/assets/ce59deb3-01ae-48d0-b823-567cf4dd13a1)
+
+
